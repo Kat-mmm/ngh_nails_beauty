@@ -692,7 +692,7 @@ h2 {
 }
 
 .cards::-webkit-scrollbar {
-  height: 12px;
+  height: 20px;
 }
 
 .cards::-webkit-scrollbar-thumb,
