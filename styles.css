@@ -296,7 +296,7 @@ header .container > h1{
 .services-gallery{
   height: 300px;
   width: 100vw;
-  background-image: url(./images/about-bg.jpg);
+  background-image: url("./images/about-bg\ \(1\).jpg");
   margin-bottom: 40px;
   margin-top: 150px;
   display: flex;
