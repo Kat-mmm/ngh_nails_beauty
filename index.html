@@ -46,7 +46,7 @@
 
         <nav id="HOME" class="navbar navbar-expand-sm navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#HOME"><img data-lazy="images/ngh-logo.png" width="80px"/></a>
+              <a class="navbar-brand" href="#HOME"><img loading="eager" src="images/ngh-logo.png" width="80px"/></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -77,12 +77,12 @@
           <h1>Naledi's Glam House</h1>
           <p>Where beauty meets elegance.</p>
         </div>
-        <img data-lazy="./images/backgroung-img.png" class="header-img"/>
+        <img loading="eager" src="./images/backgroung-img.png" class="header-img"/>
       </header>
 
       <section class="about-container" id="about">
         <div>
-          <img data-lazy="./images/about-img.PNG" id="about-img"/>
+          <img loading="eager" src="./images/about-img.PNG" id="about-img"/>
         </div>
         <div class="about">
           <h2>About <span>Us</span></h2>
@@ -107,7 +107,7 @@
           </ul>
           <div class="service-info">
             <section class="item-image">
-              <img src="./images/plain.jpg" id='product-img'/>
+              <img loading="lazy" src="./images/plain.jpg" id='product-img'/>
             </section>
           </div>
         </div>
@@ -117,10 +117,10 @@
         <div class="component">
           <h3>Manicure</h3>
         </div>
-        <div class="component" style="background-image: url(./images/pedi.jpeg);">
+        <div class="component" loading="lazy" style="background-image: url(./images/pedi.jpeg);">
           <h3>Pedicure</h3>
         </div>
-        <div class="component" style="background-image: url(./images/male-nails.jpeg);">
+        <div class="component" loading="lazy" style="background-image: url(./images/male-nails.jpeg);">
           <h3>Male nail care</h3>
         </div>
       </section>
@@ -244,7 +244,7 @@
       <section class="team" id="team">
         <h1>Meet the team</h1>
         <div>
-          <img src="./images/nale.jpg" width="300px"/>
+          <img loading="lazy" src="./images/nale.jpg" width="300px"/>
           <h1>Naledi Hokoane</h1>
           <p>Nail tech, founder</p>
         </div>
@@ -293,17 +293,6 @@
         });}
         }, 3000);});
     </script>
-    <script>
-
-      $('.navbar').slick({
-        lazyLoad:'progressive'
-      })
-      $('.polish').slick({
-        lazyLoad:'pogressive'
-      })
-      $('.polish').slick({
-        lszyLoad:'progressive'
-      })
-    </script>
+    
 </body>
 </html>

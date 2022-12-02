@@ -692,20 +692,24 @@ h2 {
 }
 
 .cards::-webkit-scrollbar {
-  height: 20px;
+  height: 12px;
+  z-index: 99999;
 }
 
 .cards::-webkit-scrollbar-thumb,
 .cards::-webkit-scrollbar-track {
   border-radius: 92px;
+  z-index: 99999999;
 }
 
 .cards::-webkit-scrollbar-thumb {
   background: var(--lightpink);
+  z-index: 9999999;
 }
 
 .cards::-webkit-scrollbar-track {
   background: var(--thumb);
+  z-index: 999;
 }
 
 @media (min-width: 500px) {
