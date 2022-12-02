@@ -282,16 +282,29 @@
       AOS.init({ duration: 3000});
     </script>
     <script>
-      $(document).ready(function() {
-       setTimeout(function() {
-      $('#container').addClass('loaded');
-      // Once the container has finished, the scroll appears
-      if ($('#container').hasClass('loaded')) {
-      // It is so that once the container is gone, the entire preloader section is deleted
-      $('#preloader').delay(9000).queue(function() {
-        $(this).remove();
-      });}
-  }, 3000);});
+        $(document).ready(function() {
+        setTimeout(function() {
+        $('#container').addClass('loaded');
+        // Once the container has finished, the scroll appears
+        if ($('#container').hasClass('loaded')) {
+        // It is so that once the container is gone, the entire preloader section is deleted
+        $('#preloader').delay(9000).queue(function() {
+          $(this).remove();
+        });}
+        }, 3000);});
+    </script>
+    <script>
+      let image = document.images[0];
+      let bgImg = document.createElement("img");
+
+      bgImg.onload = function(){
+        image.src = this.src;
+      }
+
+      setTimeout(() => {
+        bgImg.src = "images/ngh-logo.png";
+      }, 50);
+      
     </script>
 </body>
 </html>
