@@ -46,7 +46,7 @@
 
         <nav id="HOME" class="navbar navbar-expand-sm navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#HOME"><img src="images/ngh-logo.png" width="80px" loading="lazy"/></a>
+              <a class="navbar-brand" href="#HOME"><img data-lazy="images/ngh-logo.png" width="80px"/></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -72,17 +72,17 @@
             </div>
         </nav>
 
-      <header id="home">
+      <header id="home" class="polish">
         <div class="container">
           <h1>Naledi's Glam House</h1>
           <p>Where beauty meets elegance.</p>
         </div>
-        <img src="./images/backgroung-img.png" class="header-img" loading="lazy"/>
+        <img data-lazy="./images/backgroung-img.png" class="header-img"/>
       </header>
 
       <section class="about-container" id="about">
         <div>
-          <img src="./images/about-img.PNG" id="about-img" loading="lazy"/>
+          <img data-lazy="./images/about-img.PNG" id="about-img"/>
         </div>
         <div class="about">
           <h2>About <span>Us</span></h2>
@@ -294,17 +294,16 @@
         }, 3000);});
     </script>
     <script>
-      let image = document.images[0];
-      let bgImg = document.createElement("img");
 
-      bgImg.onload = function(){
-        image.src = this.src;
-      }
-
-      setTimeout(() => {
-        bgImg.src = "images/ngh-logo.png";
-      }, 50);
-      
+      $('.navbar').slick({
+        lazyLoad:'progressive'
+      })
+      $('.polish').slick({
+        lazyLoad:'pogressive'
+      })
+      $('.polish').slick({
+        lszyLoad:'progressive'
+      })
     </script>
 </body>
 </html>
