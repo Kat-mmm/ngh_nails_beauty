@@ -413,6 +413,7 @@ header .container > h1{
   height: 100vh;
   padding-top: 20px;
   width: 100vw;
+  margin-bottom: 60px;
 }
 
 .team{
@@ -818,6 +819,10 @@ h2 {
   .reviews{
     height: 58vh;
     margin-bottom: 120px;
+  }
+
+  #insta-feed{
+    height: 100vh;
   }
 }
 
