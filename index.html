@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -84,14 +85,13 @@
         <div>
           <img loading="eager" src="./images/about-img (1).png" id="about-img"/>
         </div>
-        <div class="about">
+        <div class="about" id="about">
           <h2>About <span>Us</span></h2>
-          <p>Is a full-service nail bar founded by Naledi Hokoane, started off as a self taught nail tech and now is a certified nail tech. The nail bar caters to both men and women, with the goal of providing a glamourous beauty services at an affordable price.</p>
-          <!-- <img src="./images/about.jpg" class="about-img"/> -->
+          <p>Naledi's Glam House is a premier beauty destination that offers a full range of luxurious nail services for both men and women. Our talented and certified nail technicians, led by founder Naledi Hokoane, are dedicated to delivering exceptional beauty treatments that will leave you feeling refreshed, rejuvenated and glamourous. With a passion for all things nails and a drive for delivering affordable luxury, Naledi's Glam House is the perfect place to relax, unwind and indulge in a little pampering. Whether you're looking for a simple manicure or an intricate nail design, we have everything you need to bring out the best in your hands and feet. Let us help you shine and embrace your inner glamour at Naledi's Glam House.</p>
         </div>
       </section>
 
-      <div data-aos="fade-up" class="services" id="services">
+      <div class="services" id="services">
         <h2><span>Discover</span><br> Our Services</h2>
         <div class="container">
           <ul class="links">
@@ -125,33 +125,14 @@
         </div>
       </section>
 
-      
       <div data-aos="fade-uo" class="gallery">
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <h2><span>Discover</span><br> Our Gallery</h2>
         <div id="insta-feed" class="elfsight-app-24eadce4-cc21-4e50-9742-504578702b9b"></div>
-        <!-- <div class="container">
-          <img class="grid-img"src="./images/nail1.jpeg" alt="">
-          <img class="grid-img"src="./images/nail2.jpeg" alt="">
-          <img class="grid-img"src="./images/nail3.jpeg" alt="">
-          <img class="grid-img"src="./images/nail4.jpeg" alt="">
-          <img class="grid-img"src="./images/nail5.jpeg" alt="">
-          <img class="grid-img"src="./images/nail6.jpeg" alt="">
-          <img class="grid-img"src="./images/nail7.jpeg" alt="">
-          <img class="grid-img"src="./images/nail8.jpeg" alt="">
-          <img class="grid-img"src="./images/nail10.jpeg" alt="">
-          <img class="grid-img"src="./images/nail9.jpeg" alt="">
-          <img class="grid-img"src="./images/nail13.jpeg" alt="">
-          <img class="grid-img"src="./images/nail14.jpeg" alt="">
-          <img class="grid-img"src="./images/nail15.jpeg" alt="">
-          <img class="grid-img"src="./images/nail16.jpeg" alt="">
-          <img class="grid-img"src="./images/nail17.jpeg" alt="">
-        </div> -->
         <div class="gallery-description">
         </div>
       </div>
-      
-
+    
       <div data-aos="zoom-in-up" class="reviews">
         <h2><span>Discover</span><br>What people say about us</h2>
         <div class="container">
@@ -201,15 +182,6 @@
                 </div>
               </div>
             </li>
-            <!-- <li class="card">
-              <i class="fa-solid fa-quote-left"></i>
-              <div>
-                <h3 class="card-title">Client 6</h3>
-                <div class="card-content">
-                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ornare metus ac lectus scelerisque volutpat.</p>
-                </div>
-              </div>
-            </li> -->
           </ul>
         </div>
       </div>
@@ -221,7 +193,10 @@
 
           <input type="text" name="Name" placeholder="Full Name" class="form-control" id="name" required><br>
 
-          <input type="tel" name="Phone" placeholder="Phone number" class="form-control" id="phone" required>
+          <input type="tel" name="Phone" placeholder="Phone number" class="form-control" id="phone" required><br>
+
+          <input type="text" id="booking-date" name="booking-date" class="form-control" placeholder="Select a date" style="background-color: white;" required>
+
 
           <label for="location">Location</label>
           <select class="form-select" name="location">
@@ -236,11 +211,11 @@
             <option>Pedicure</option>
             <option>Both</option>
           </select>
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
 
-      
       <section class="team" id="team">
         <h1>Meet the team</h1>
         <div>
@@ -255,22 +230,55 @@
       </button>
 
 
-      <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="https://www.instagram.com/ngh_nails_beauty/"><i class="fa fa-instagram"></i></a><a href="https://wa.me/+27812681334"><i class="fa fa-whatsapp"></i></a><a href="tel:+27812681334"><i class="fa fa-phone"></i></a><a href="https://www.facebook.com/Naledisglamhouse"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#HOME">Home</a></li>
-                <li class="list-inline-item"><a href="#services">Services</a></li>
-                <li class="list-inline-item"><a href="#about">About</a></li>
-                <li class="list-inline-item"><a href="#team">Team</a></li>
-                <li class="list-inline-item"><a href="#booking">Booking</a></li>
-            </ul>
-            <p class="copyright">Naledi's Glam House © 2022</p>
-        </footer>
-    </div>
-    
-
-
+  <div class="footer-enhanced">
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 ngh-ft">
+                        <h3>Naledi's Glam House</h3>
+                        <p>We provide the best beauty and nail services for our clients. Our team of experts will make sure you leave feeling pampered and rejuvenated.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3>Quick Links</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#HOME">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#booking">Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3>Follow Us</h3>
+                        <p>Stay updated on the latest news and promotions by following us on our social media platforms.</p>
+                        <div class="social">
+                            <a href="https://www.instagram.com/ngh_nails_beauty/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://wa.me/+27812681334"><i class="fa fa-whatsapp"></i></a>
+                            <a href="tel:+27812681334"><i class="fa fa-phone"></i></a>
+                            <a href="https://www.facebook.com/Naledisglamhouse"><i class="icon ion-social-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3>Contact Us</h3>
+                        <p>Feel free to reach out to us for any questions or concerns.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone"></i> +27812681334</li>
+                            <li><i class="fa fa-envelope"></i> Naledisglamhouse@gmail.com</li>
+                            <li><i class="fa fa-map-marker"></i> 66B King Edward Street, Bloemfontein, South Africa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">Naledi's Glam House © 2023</p>
+            </div>
+        </div>
+    </footer>
+ </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
@@ -293,6 +301,15 @@
         });}
         }, 3000);});
     </script>
+
+    <script>
+      flatpickr("#booking-date", {
+        enableTime: false, // disable time selection
+        dateFormat: "Y-m-d", // set the date format
+        minDate: "today", // restrict dates to the future
+      });
+    </script>
     
+
 </body>
 </html>
