@@ -136,6 +136,11 @@ font-size:45px;}
   margin: auto;
 }
 
+.container-fluid{
+  display: flex;
+  justify-content: space-between;
+}
+
 nav{
   background-color: white;
   width: 100vw;
