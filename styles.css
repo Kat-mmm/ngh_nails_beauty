@@ -132,7 +132,8 @@ font-size:45px;}
 
 .navbar-nav > li{
   padding: 10px;
-  font-size: 18px; 
+  font-size: 18px;
+  margin: auto;
 }
 
 nav{
