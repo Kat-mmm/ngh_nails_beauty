@@ -1,7 +1,10 @@
 let productImg = document.getElementById('product-img');
+const myList = document.querySelector('.links');
+const listItems = myList.querySelectorAll('.nail');
+
 
 function show(){
-    productImg.src = './images/plain.jpg';
+    productImg.src = './images/pb.jpg';
 }
 
 function show2(){
@@ -9,7 +12,7 @@ function show2(){
 }
 
 function show3(){
-    productImg.src = './images/french.jpg';
+    productImg.src = './images/frenchie.jpg';
 }
 
 function show4(){
@@ -17,7 +20,7 @@ function show4(){
 }
 
 function show5(){
-    productImg.src = './images/overlay.jpg';
+    productImg.src = './images/acr-over.jpg';
 }
 
 function show6(){
@@ -35,4 +38,16 @@ function show8(){
 function show9(){
     productImg.src = './images/art.jpg';
 }
+
+for (let i = 0; i < listItems.length; i++) {
+  listItems[i].addEventListener('click', function() {
+
+    for (let j = 0; j < listItems.length; j++) {
+      listItems[j].classList.remove('active');
+    }
+    
+    this.classList.add('active');
+  });
+}
+
 

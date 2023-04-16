@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naledi's Glam House</title>
     <link href="styles.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
 </head>
 <body class="text-secondary">
   <div id="preloader">
@@ -46,13 +47,13 @@
 
 
         <nav id="HOME" class="navbar navbar-expand-sm navbar-light">
-            <div class="container-fluid">
+            <div class="container-fluid cn">
               <a class="navbar-brand" href="#HOME"><img loading="eager" src="images/ngh-logo (1).png" width="80px"/></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
                     <a class="nav-link" href="#HOME">Home</a>
                   </li>
@@ -94,21 +95,23 @@
       <div class="services" id="services">
         <h2><span>Discover</span><br> Our Services</h2>
         <div class="container">
-          <ul class="links">
-            <li onClick="show()">Plain acrylic nails  <span class="price">R150</span></li>
-            <li onClick="show2()">Plain ombre/french  <span class="price">R200</span></li>
-            <li onClick="show3()">Ombre/French full set  <span class="price">R250</span></li>
-            <li onClick="show4()">C-curved plain  <span class="price">R200</span></li>
-            <li onClick="show5()">Acrylic overlay  <span class="price">R120</span></li>
-            <li onClick="show6()">Pedicure  <span class="price">R150</span></li>
-            <li onClick="show7()">Soak off  <span class="price">R60</span></li>
-            <li onClick="show8()">Male nail grooming  <span class="price">R100</span></li>
-            <li onClick="show9()">Nail art  <span class="price">R10 - R20</span></li>
-          </ul>
+          <div class="links">
+            <ul>
+              <li class="nail" onClick="show()">Plain acrylic nails  <span class="price">R170</span></li>
+              <li class="nail" onClick="show2()">Plain ombre/french  <span class="price">R250</span></li>
+              <li class="nail" onClick="show3()">Ombre/French full set  <span class="price">R280</span></li>
+              <li class="nail" onClick="show4()">C-curved plain  <span class="price">R200</span></li>
+              <li class="nail" onClick="show5()">Acrylic overlay  <span class="price">R150</span></li>
+              <li class="nail" onClick="show6()">Pedicure  <span class="price">R150</span></li>
+              <li class="nail" onClick="show7()">Soak off  <span class="price">R60</span></li>
+              <li class="nail" onClick="show8()">Male nail grooming  <span class="price">R100</span></li>
+              <li class="nail" onClick="show9()">Nail art (per nail) <span class="price">R10 - R20</span></li>
+            </ul>
+          </div>
           <div class="service-info">
-            <section class="item-image">
-              <img loading="lazy" src="./images/plain.jpg" id='product-img'/>
-            </section>
+            <!-- <section class="item-image"> -->
+              <img loading="lazy" src="./images/pb.jpg" id='product-img'/>
+            <!-- </section> -->
           </div>
         </div>
       </div>
@@ -128,8 +131,9 @@
       <div data-aos="fade-uo" class="gallery">
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <h2><span>Discover</span><br> Our Gallery</h2>
-        <div id="insta-feed" class="elfsight-app-24eadce4-cc21-4e50-9742-504578702b9b"></div>
+        
         <div class="gallery-description">
+          <div id="insta-feed" class="elfsight-app-24eadce4-cc21-4e50-9742-504578702b9b"></div>
         </div>
       </div>
     
@@ -219,7 +223,7 @@
       <section class="team" id="team">
         <h1>Meet the team</h1>
         <div>
-          <img loading="lazy" src="./images/nale.jpg" width="300px"/>
+          <img loading="lazy" src="./images/founder.jpg" width="300px"/>
           <h1>Naledi Hokoane</h1>
           <p>Nail tech, founder</p>
         </div>

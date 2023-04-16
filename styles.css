@@ -1,15 +1,12 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html,body{
     font-family: "Inter", sans-serif;
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
+
+/* *{
+  border: 1px solid red;
+} */
 
 .container-preloader {
 	align-items:center; cursor:none; display:flex; height:100%;
@@ -125,26 +122,14 @@ to {
 font-size:45px;}
 
 
-
-
-
-
-
-.navbar-nav > li{
+.navbar-nav > ul{
   padding: 10px;
   font-size: 18px;
-  margin: auto;
-}
-
-.container-fluid{
-  display: flex;
-  justify-content: space-between;
 }
 
 nav{
   background-color: white;
-  width: 100vw;
-  /* //border-radius: 30%; */
+  width: 100%;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -155,37 +140,40 @@ nav{
 
 header{
   height: 400px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  /* gap: 100px; */
   background-color: white;
   border-bottom: 2px solid #f53163;
 }
 
 header .header-img{
-  width: 400px;
+  width: 80%;
   height: 390px;
-  /* margin-right: 40px; */
+  align-self: flex-end;
+  /* margin-left: 200px; */
 }
-
 
 header .container{
   text-align: center;
-  margin: auto 0;
+  justify-self: right;
+  align-self: center;
   color: #f53163;
+  /* margin-left: 100px; */
 }
 
 header .container > h1{
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 3rem;
 }
 
 .about-container {
   background-image: url(./images/about-bg.jpg);
   display: flex;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  justify-content: flex-start;
+  height: fit-content;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 .about {
@@ -196,8 +184,7 @@ header .container > h1{
   text-align: center;
   background-color: white;
   margin-top: 0px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 }
 
 #about-img {
@@ -210,6 +197,7 @@ header .container > h1{
   align-self: center;
   margin-top: 25vh;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* margin-left: 200px; */
 }
 
 .about > h2 {
@@ -222,51 +210,11 @@ header .container > h1{
   margin-bottom: 0px;
 }
 
-
-
-
-/* .about-container{
-  background-image: url(./images/about-bg.jpg);
-  display: flex;
-  justify-content: center;
-  height: 450px;
-  width: 100vw;
-}
-
-.about{
-  width: 100vw;
-  height: 390px;
-  padding: 10px;
-  font-size: large;
-  text-align: center;
-  background-color: white;
-  margin-top: 0px;
-}
-
-#about-img{
-  width: 40%;
-  height: 40%;
-  border: 3px solid #ec9aae;
-  outline: 14px solid transparent;
-  border-radius: 2px;
-  padding: 20px;
-  align-self: center;
-  margin-top: 100px;
-}
-
-.about > h2{
-  font-family: 'Caveat', "Pacifico", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  color: #f53163;
-  margin-top: 20px;
-} */
-
 .services{
   text-align: center;
   margin-top: 14px;
-  height: 100vh;
-  width: 100vw;
+  height: fit-content;
+  width: 100%;
 }
 
 .services h2{
@@ -282,39 +230,32 @@ header .container > h1{
 
 .services .container{
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 50px;
-  height: 100%;
+  height: fit-content;
+  padding: 0;
 }
-
 
 .links{
-  width: 30vw;
-}
-
-.services .container ul{
-  list-style-type: none;
   text-align: left;
-  margin-left: 0px;
-  margin-right: 60px;
-  padding: 30px;
+  width: 50%;
+  height: 100%;
+  margin: 0;
   background-color: rgb(234, 234, 234);
-  box-shadow: 5px 10px 40px #a8a8a8;
 }
 
 .services .container ul li{
   border-bottom: 1px solid black;
+  list-style-type: none;
   padding: 12px;
   font-weight: bold;
-  margin-bottom: 2px;
-  max-height: 80vh;
+  margin-bottom: 0.8px;
 }
 
-.services .container ul li:hover{
+.services .container ul li:hover, .services .container ul li.active{
   color: #f53163;
   scale: 1.1;
   cursor: pointer;
+  width: 90%;
 }
 
 .services .container ul li span{
@@ -323,32 +264,24 @@ header .container > h1{
   color: #ec9aae;
 }
 
-#product-img{
-  width: 85%;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-top: 40px;
-  border: 3px solid #a8a8a8;
-  box-shadow: 10px 17px 45px#a8a8a8;
-  transition: 0.5s;
-}
-
 .service-info{
   width: 50%;
   height: 100%;
 }
 
-/* .service-info section{
-  height: 80%;
-} */
+#product-img{
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  transition: 0.5s;
+}
 
 .services-gallery{
   height: 300px;
-  width: 100vw;
+  width: 100%;
   background-image: url("./images/about-bg\ \(1\).jpg");
   margin-bottom: 40px;
-  margin-top: 150px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -389,37 +322,52 @@ header .container > h1{
 
 .gallery{
   text-align: center;
-  width: 95vw;
+  width: 100%;
+  padding-left: 6%;
+  padding-right: 6%;
   margin-bottom: 80px;
+  margin-top: 50px;
   /* max-width: 100vw; */
 }
 
 #insta-feed{
-  width: 100vw;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-description{
-  height: 100px;
+  height: fit-content;
+  width: 100%;
   color: #fff;
   background-color: #ec9aae;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 781px){
+
+} */
+
+/* big screen styles */
+@media only screen and (min-width: 781px) {
   header .header-img{
-    margin-right: 200px;
+    margin-right: 100px;
     width: 600px;
     height: 398px;
     object-fit: cover;
   }
 
+  .about-container{
+    padding-right: 6vw;
+  }
+
   .about{
     height: fit-content;
-    width: 40vw;
-    margin-right: auto;
+    width: 70vw;
   }
 
   #about-img{
-    margin-left: 300px;
+    margin-left: 100px;
     width: 220px;
     height: 220px;
   }
@@ -432,35 +380,29 @@ header .container > h1{
     justify-content: center;
     gap: 80px;
   }
-  .gallery{
-    margin-top: 50px;
-    padding-left: 100px;
-    /* margin-left: 100px; */
-  }
-  .gallery-description{
-    height: 100px;
-    color: #fff;
-    background-color: #ec9aae;
+
+  .services .container{
+    border: 2px solid #f53163;
   }
 
 }
 
 .reviews{
   text-align: center;
-  height: 100vh;
+  height: fit-content;
   padding-top: 20px;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 60px;
 }
 
 .team{
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .team div{
-  width: 300px;
+  width: 36%;
   margin: 0 auto;
   border: 2px solid white;
   box-shadow: 18px 17px 45px #a8a8a8;
@@ -650,8 +592,31 @@ h2 {
 }
 
 
+/* mobile phones styling */
+@media only screen and (max-width: 780px){
+  nav{
+    z-index: 5;
+  }
 
-@media only screen and (max-width: 768px){
+  header{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header .container{
+    z-index:  10;
+  }
+
+  .header-img{
+    width: 100%;
+    margin-left: -20px;
+    z-index: 0;
+  }
+
+  /* header h1{
+    font-size: 10px;
+  } */
+
   .navbar-toggler{
     margin-right: 12px;
   }
@@ -675,48 +640,41 @@ h2 {
     padding-bottom: 50px;
   }
 
-  .service-info{
-    width: 90vw;
-    height: 40vh;
-  }
-
-  .service-info img{
-    width: 100vw;
-    margin-right: 180px;
-  }
-
   .services h2{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 
   .services .container{
-    text-align: center;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 98px;
+    padding-left: 30px;
+    padding-right: 30px ;
   }
 
-  .links{
-    width: 75vw;
-    margin-left: 15px;
-    /* position: absolute;
-    left: 60;
-    top: 120; */
+  .links, .service-info{
+    width: 100%;
+    height: 50%;
   }
 
   .services-gallery{
-    height: 100vh;
-    margin-top: 210px;
+    height: fit-content;
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    padding-top: 30px;
   }
   
   .gallery{
     width: 100vw;
+    margin-bottom: 10px;
+  }
+
+  .gallery h2{
+    height: fit-content;
+    margin-bottom: 80px;
   }
 
   .gallery-description{
@@ -724,17 +682,25 @@ h2 {
   }
 
   .reviews{
-    height: 58vh;
-    margin-bottom: 120px;
+    height: fit-content;
+    margin-bottom: 70px;
   }
 
   #insta-feed{
     height: 100vh;
   }
 
+  .book form{
+    width: 88%;
+  }
+
   .social{
     margin-bottom: 20px;
     padding-right: 10px;
+  }
+
+  .team div{
+    width: 80%;
   }
 }
 
