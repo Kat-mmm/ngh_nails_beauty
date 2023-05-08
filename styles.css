@@ -4,9 +4,9 @@ html,body{
     box-sizing: border-box;
 }
 
-/* *{
+*{
   border: 1px solid red;
-} */
+}
 
 .container-preloader {
 	align-items:center; cursor:none; display:flex; height:100%;
@@ -594,6 +594,9 @@ h2 {
 
 /* mobile phones styling */
 @media only screen and (max-width: 780px){
+  body{
+    overflow-x: hidden;
+  }
   nav{
     z-index: 5;
   }
