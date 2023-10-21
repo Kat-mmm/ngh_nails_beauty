@@ -639,6 +639,8 @@ h2 {
   right: 0;
   margin: 6px;
   background-color: #f53163;
+  display: grid;
+  place-items: center;
 }
 
 .up a{
