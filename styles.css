@@ -638,13 +638,13 @@ h2 {
   bottom: 0;
   right: 0;
   margin: 6px;
-  background-color: #f53163;
+  margin-right: 12px;
   display: grid;
   place-items: center;
 }
 
 .up a{
-  color: white;
+  color: #f53163;
   text-decoration: none;
   text-align: center;
 }
