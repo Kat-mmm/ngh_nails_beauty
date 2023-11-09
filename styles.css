@@ -646,10 +646,12 @@ h2 {
 .up a{
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 .up i{
   font-size: 35px;
+  text-align: center;
 }
 
 .extras-container{
